@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background | Changer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify; /*for beautifying text */
+        }
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;  /* becoz span tag bydefault inline */
+            border: 2px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white {
+            background-color: white;
+        }
+        #aqua {
+          background-color: aquamarine;
+        }
+        #violet {
+          background-color: #ce9aff;
+        }
+        #black {
+            background-color: black;
+        }
+
+        #color-switcher {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+       <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+       <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+       <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+       <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="bg-img">
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nisi rerum unde optio voluptatem perspiciatis culpa, labore repellat id dolores odio rem aut temporibus error accusamus, distinctio quidem voluptatum nihil laboriosam! Ducimus, ut eius nihil cum est qui fugit sit impedit fuga magni perferendis quae ipsam reprehenderit assumenda odit fugiat dolorem? Unde porro exercitationem incidunt modi. Ipsum voluptatibus necessitatibus odio itaque facilis, consequatur, minus reiciendis voluptas vero cupiditate molestias? Repudiandae amet obcaecati quibusdam tenetur, repellendus dolore magni, deleniti nemo provident distinctio voluptates voluptatibus. Commodi ex obcaecati, alias ab dignissimos repellat nulla cumque aliquam. Ipsa nam mollitia molestias, veniam iure at cum ducimus commodi, dolore reiciendis provident maxime expedita aliquid doloribus soluta ex in consequuntur odio. Illo, voluptatum quam. Magni delectus tempora quia eos rerum, mollitia voluptates dolores assumenda voluptatem! Dolor, alias voluptatem? Dignissimos sit porro, repellat totam quos, assumenda quod illum reprehenderit placeat doloribus recusandae a eos labore error velit tempore commodi? Repellat, mollitia voluptas. Dicta libero vero eaque excepturi? Cupiditate atque ad laboriosam aspernatur impedit dolorem sint blanditiis quaerat? Ducimus deleniti totam minus a eum! Omnis at temporibus adipisci nemo quas perferendis. Quidem, nulla voluptatum porro adipisci sint maiores excepturi sapiente perspiciatis cum eius sed, placeat itaque, dolor blanditiis eveniet perferendis. Quas fugiat nulla ipsum explicabo quidem ullam fuga ut debitis corrupti corporis, iure molestiae amet saepe temporibus exercitationem? Animi, vero non voluptates fugiat repudiandae illo dignissimos veniam maiores, reiciendis ipsam voluptas cumque doloremque sint delectus nam aliquid quae ipsum eum soluta quibusdam rem neque corrupti enim consectetur. Praesentium quo maiores quos rerum quasi nulla atque tenetur quam neque consectetur ipsum velit quaerat esse autem, quis ab sit optio porro vero possimus unde laborum et ipsam eius! Quia distinctio maiores consequuntur nam officia totam omnis cum expedita, veritatis laboriosam doloremque reprehenderit iusto numquam voluptatum, vero commodi atque explicabo hic voluptates adipisci! Dignissimos earum magni numquam quasi adipisci harum veritatis ullam illo aspernatur tempora. Ab, veniam laboriosam? Atque deserunt accusamus similique aut delectus in debitis asperiores non! Natus numquam nihil voluptas nobis voluptatibus consequuntur itaque quos necessitatibus. Laudantium, ipsum voluptate delectus unde excepturi commodi repudiandae alias cupiditate molestias exercitationem nisi obcaecati mollitia corrupti saepe distinctio ab tenetur earum quidem sunt? Dolor neque expedita labore optio incidunt eligendi laborum! Suscipit nobis pariatur fugit dolorum velit sapiente tempore ea quam distinctio quae odit expedita impedit libero voluptate fugiat natus eius ducimus, illum doloremque deserunt rerum! Praesentium, aut ratione? Adipisci quam beatae, autem error tenetur quidem deleniti ratione deserunt cupiditate sit est recusandae facere laudantium perspiciatis corporis, molestias facilis ex. Delectus modi eius similique, et nobis mollitia voluptates molestiae! Illo commodi libero rerum aliquid, repellendus molestiae autem unde esse praesentium cum culpa corrupti soluta dicta! Dolorem facilis consequatur modi sed dolorum, itaque eius fugiat aspernatur nesciunt est blanditiis dolores odit quae quidem aliquid, officiis nihil a pariatur, maxime suscipit mollitia deserunt omnis quod non? Totam sint velit corrupti aperiam dignissimos officia, tempora laboriosam rem blanditiis dolor, officiis labore consequatur. Accusantium, velit odit! Recusandae consectetur quis dolores hic necessitatibus voluptas tenetur praesentium quasi nostrum.
+    </p>
+
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+             let txt = document.getElementsByClassName("text");
+            if(color == "#000000") {
+                for(let elm of txt) {
+                    elm.style.color = "white";
+                }
+            }else {
+                for(let elm of txt) {
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
